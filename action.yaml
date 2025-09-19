@@ -1,0 +1,17 @@
+name: Shu custom action
+
+description: Greeting
+
+inputs:
+  who-to-greet:
+    description: Who to greet
+    required: true
+    default: Hello
+
+outputs:
+  time:
+    description: time greeted
+
+runs:
+  using: node20
+  main: dist/index.js
