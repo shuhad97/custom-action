@@ -52,9 +52,8 @@ const core = __nccwpck_require__(47)
 
 try{
     const nameToGreet = core.getInput('who-to-greet')
-    console.log(`Hello, ${nameToGreet}`)
+    console.log(`Hello, ${nameToGreet}!`)
     core.setOutput('time', new Date().toTimeString())
-    
 } catch (error)
 {
     core.setFailed(error.message)
